@@ -6,7 +6,9 @@
 #define BASIC_00_EXAMPLE_STUDENT_H
 
 
-class Student {
+#include "Person.h"
+
+class Student: public Person {
 
 };
 
