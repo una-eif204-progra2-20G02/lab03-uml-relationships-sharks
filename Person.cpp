@@ -6,18 +6,18 @@
 
 Person::Person()
 {
-    string firstname = "Sin Definir";
-    string lastname  = "Sin Definir";
-    int documentid   = 0;
-    int age = 0;
+  string firstname = "Sin Definir";
+  string lastname = "Sin Definir";
+  int documentid = 0;
+  int age = 0;
 }
 
 Person::Person(string firstname, string lastname, int documentid, int age)
 {
-    firstname = firstname;
-    lastname = lastname;
-    documentid = documentid;
-    age = age;
+  firstname = firstname;
+  lastname = lastname;
+  documentid = documentid;
+  age = age;
 }
 void Person::setFirstname(string firstname) {this->firstname = firstname;}
 void Person::setLastname(string lastname) {this ->lastname = lastname;}
@@ -29,19 +29,21 @@ string Person::getLastname() {return lastname;  }
 int Person::getDocumentid() {return documentid;}
 int Person::getAge() {return age;}
 
-Person::~Person(){}
+Person::~Person(){
+
+}
 
 double Person::salary(){
-    return 0;
+  return 0;
 }
 
 string Person::toString()
 {
-    stringstream x;
+  stringstream x;
 
-    x <<"Persona: "<<firstname<<","<<lastname<<endl;
-    x <<"Doc Id: "<<documentid<<endl;
-    x<<"Age: "<<age<<endl;
+  x <<"Persona: "<<firstname<<","<<lastname<<endl;
+  x <<"Doc Id: "<<documentid<<endl;
+  x<<"Age: "<<age<<endl;
 
-    return x.str();
+  return x.str();
 }
