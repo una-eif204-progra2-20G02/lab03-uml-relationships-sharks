@@ -10,7 +10,7 @@ class Administrative: public Person {
 public:
   Administrative();
   Administrative(double);
-  Administrative(string,string,int,double);
+  Administrative(string,string,int, int,double);
   void setMonthlySalary(double);
   double getMonthlySalary();
   double salary();
