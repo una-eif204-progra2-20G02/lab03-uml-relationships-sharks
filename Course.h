@@ -19,8 +19,9 @@ class Course {
   vector<Student> getStudentList():
 
 private:
-  int amountOfCredits;
+
   string topic;
+  int amountOfCredits;
   vector<Student> studentList;
 };
 
