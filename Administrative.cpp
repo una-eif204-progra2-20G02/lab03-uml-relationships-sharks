@@ -15,7 +15,7 @@ Administrative::Administrative(double monthlySalary){
   this->monthlySalary = monthlySalary;
 }
 
-Administrative::Administrative(string firstName, string lastName, int documentId, intdouble monthlySalary) :Person(firstName, lastName,documentId){
+Administrative::Administrative(string firstName, string lastName, int documentId, int age, double monthlySalary) :Person(firstName, lastName,documentId, age){
   this->monthlySalary = monthlySalary;
 }
 
@@ -33,7 +33,9 @@ double Administrative::salary(){
 
 string Administrative::toString() {
   stringstream t;
-  t<<"Administrative Information: "<<firstName<<" "<<lastName<<endl;
-  t<<"Doc Id: "<<documentId<<","<<" Monthly Salary: "<< setprecision(2) << fixed <<salary()<<endl;
+  t<<"Administrative Information:"<<firstName<<" "<<lastName<<endl;
+  t<<"Doc Id: "<<documentId<<endl; 
+  t<<age<<"age"<<endl;
+  t<<"Monthly Salary: "<< setprecision(2) << fixed <<salary()<<endl;
   return t.str();
 } 

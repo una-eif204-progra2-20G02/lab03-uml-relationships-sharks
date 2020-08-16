@@ -4,6 +4,7 @@
 
 #ifndef LAB03_UML_ADMINISTRATIVE_H
 #define LAB03_UML_ADMINISTRATIVE_H
+#include "Person.h"
 
 class Administrative: public Person {
 
