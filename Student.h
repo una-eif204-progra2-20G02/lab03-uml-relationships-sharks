@@ -10,12 +10,12 @@
 #include "Person.h"
 
 class Student: public Person {
-
+public:
   Student();
   Student(string,string,int,int);
   void addCourses(Course);
   vector<Course> getCourseList();
-  string toString():
+  string toString();
 
 private:
   vector<Course> courses;

@@ -9,6 +9,9 @@
 #include <vector>
 
 class Course {
+
+public:
+
   Course();
   Course(int,string);
   int getAmountOfCredits();
@@ -16,7 +19,7 @@ class Course {
   void setAmountOfCredits(int);
   void setTopic(string);
   void addStudent(student);
-  vector<Student> getStudentList():
+  vector<Student> getStudentList();
 
 private:
 
