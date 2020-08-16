@@ -6,13 +6,19 @@
 #define BASIC_00_EXAMPLE_STUDENT_H
 
 #include "Course.h"
+#include <vector>
 #include "Person.h"
 
 class Student: public Person {
+
   Student();
-  Student();
+  Student(string,string,int,int);
+  void addCourses(Course);
+  vector<Course> getCourseList();
+  string toString():
+
 private:
-  vector<Course> Courses;
+  vector<Course> courses;
 };
 
 
