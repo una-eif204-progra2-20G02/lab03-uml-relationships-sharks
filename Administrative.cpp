@@ -33,9 +33,9 @@ double Administrative::salary(){
 
 string Administrative::toString() {
   stringstream t;
-  t<<"Administrative Information:"<<firstName<<" "<<lastName<<endl;
-  t<<"Doc Id: "<<documentId<<endl; 
-  t<<age<<"age"<<endl;
+  t<<"Administrative Information:"<<getFirstname()<<" "<<getLastname()<<endl;
+  t<<"Doc Id: "<<getDocumentid()<<endl; 
+  t<<getAge()<<"age"<<endl;
   t<<"Monthly Salary: "<< setprecision(2) << fixed <<salary()<<endl;
   return t.str();
 } 

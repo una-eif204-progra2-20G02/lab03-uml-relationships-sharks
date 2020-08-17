@@ -20,4 +20,5 @@ public:
 
 private:
   double monthlySalary;
+ };
 #endif //BASIC_00_EXAMPLE_ADMINISTRATIVE_H

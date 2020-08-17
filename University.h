@@ -14,7 +14,7 @@ class University {
   public:
     University();
     University(string);
-    University(string,Professor*,Administrative*);
+    University(string,Professor*,Administrative*,Student*);
     string getName();
     void setName(string);
     Professor* getProfessor();

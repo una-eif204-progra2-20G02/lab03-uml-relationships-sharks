@@ -18,7 +18,7 @@ public:
   string getTopic();
   void setAmountOfCredits(int);
   void setTopic(string);
-  void addStudent(student);
+  void addStudent(Student);
   vector<Student> getStudentList();
 
 private:
