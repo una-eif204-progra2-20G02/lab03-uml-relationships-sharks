@@ -21,10 +21,14 @@ class University {
     void setProfessor(Professor *professor);
     Administrative* getAdministrative();
     void setAdministrative(Administrative *administrative);
+    Student* getStudent();
+    void setStudent(Student *student);
     void addProfessor(Professor *professor);
+    void addStudent(Student *student);
     string getListProfessor();
     void addAdministrative(Administrative *administrative);
     string getListAdministrative();
+    string getListStudent();
 
   private:
     string name;
